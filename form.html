@@ -1,0 +1,85 @@
+<html>
+
+<head>
+    <title>Registration Form
+    </title>
+
+    <style>
+        table {
+            color: white;
+            border-radius: 20px;
+        }
+
+        #button {
+            background-color: green;
+            color: white;
+            height: 32px;
+            width: 85px;
+            border-radius: 25px;
+        }
+
+        body {
+            /* background: linear-gradient(red, blue); */
+            background: url(https://images.unsplash.com/photo-1533174072545-7a4b6ad7a6c3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8ZmVzdGl2YWx8ZW58MHx8MHx8&w=1000&q=80);
+
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1 style="color: white;">
+        <center>Techfest Registration 2022</center>
+    </h1>>
+    <br><br><br><br>
+
+    <form method="post" action="connect.php">
+        <table border="0" bgcolor="black" align="center" cellspacing="20">
+            <tr>
+                <td>First Name</td>
+                <td><input type="text" name="firstname" placeholder="First Name" required></td>
+            </tr>
+
+            <tr>
+                <td>Last Name</td>
+                <td><input type="text" name="lastname" placeholder="Last Name" required></td>
+            </tr>
+
+            <tr>
+                <td>Email Address</td>
+                <td><input type="text" name="email" placeholder="Email Address" required></td>
+            </tr>
+
+            <tr>
+                <td>Phone No.</td>
+                <td><input type="phone" name="phone" placeholder="Phone No." required></td>
+            </tr>
+
+            <tr>
+                <td>Gender</td>
+                <td>
+                    <input type="radio" name="gender" value="Male" required>Male
+                    <input type="radio" name="gender" value="Female" required>Female
+                </td>
+            </tr>
+
+            <tr>
+                <td>Events</td>
+                <td>
+                    <input type="checkbox" name="event[]" value="ideathon">ideathon
+                    <input type="checkbox" name="event[]" value="MockParliament">MockParliament
+                    <input type="checkbox" name="event[]" value="MinuteToWinIt">MinuteToWinIt<br><br>
+                    <input type="checkbox" name="event[]" value="Disrupt">Disrupt
+                    <input type="checkbox" name="event[]" value="BPlan">BPlan
+                    <input type="checkbox" name="event[]" value="Pitch-perfect">PitchPerfect
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="2" align="center"><input type="submit" id="button"></a></td>
+            </tr>
+    </form>
+    </table>
+</body>
+
+</html>
